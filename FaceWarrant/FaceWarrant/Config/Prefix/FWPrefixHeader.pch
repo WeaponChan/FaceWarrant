@@ -1,0 +1,86 @@
+//
+//  FWPrefixHeader.pch
+//  FaceWarrant
+//
+//  Created by LHKH on 2018/6/8.
+//  Copyright © 2018年 LHKH. All rights reserved.
+//
+
+#ifndef FWPrefixHeader_pch
+#define FWPrefixHeader_pch
+
+//配置文件
+#import "FWConfig.h"
+
+//宏
+#import "Macro_UserDefaults.h"
+#import "Macro_Notification.h"
+#import "Macro_Color.h"
+#import "Macro_Font.h"
+#import "Macro_FileName.h"
+#import "Macro_Image.h"
+#import "Macro_APIKey.h"
+#import "Macro_Device.h"
+
+//常用三方
+#import "UIImageView+WebCache.h"        //图片下载
+#import "MJRefresh.h"                   //下拉刷新
+#import "MJExtension.h"                 //模型转换
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"                     //代码约束
+#import "IQKeyboardManager.h"
+#import "FWTextTools.h"
+#import "LhkhRequestManager.h"          //网络请求
+#import "RefreshCatGifHeader.h"
+#import "RefreshCatGifFooter.h"
+
+
+//自定义控件
+#import "LhkhTextField.h"
+#import "LhkhWaterfallLayout.h"
+#import "LhkhEmptyViewManager.h"
+
+//自定义控制器
+#import "LhkhNavigationController.h"
+
+//常用分类
+#import "UIColor+Hex.h"                 //16进制颜色扩展
+#import "UIView+JSFrame.h"              //UIView frame属性扩展
+#import "UIAlertController+JSAlert.h"
+#import "UIImage+JSRenderingMode.h"
+#import "NSDictionary+Encryption.h"     //接口验签
+#import "MBProgressHUD+JASON.h"
+#import "UILabel+ChangeLineSpaceAndWordSpace.h"
+#import "NSString+ZhengZePanduan.h"
+#import "UIImage+Common.h"
+
+
+//自定义导航栏
+#import "UINavigationBar+JSNavigationBar.h"
+#import "UIBarButtonItem+JSCustomItem.h"
+
+//首页face枚举
+typedef NS_ENUM(NSUInteger, selectHomeType) {
+    selectHomeNewestType = 0, // 最新
+    selectHomeHotType = 1, //热门
+    selectHomeRecommendType = 2 //推荐
+    
+};
+
+//发现 枚举
+typedef NS_ENUM(NSUInteger, selectDiscoveryType) {
+    selectDiscoveryNewType = 0, // 最新
+//    selectDiscoveryFaceType = 1, // face库
+    selectDiscoveryAnswerType = 1, // 回答
+};
+
+//发布碑它方式
+typedef NS_ENUM(NSUInteger, selectWarrantGoodsType) {
+    selectWarrantGoodsPhotoType = 0, // 照片
+    selectWarrantGoodsCameraType = 1, //相机
+    selectWarrantGoodsVideoType = 2 //视频
+    
+};
+
+
+#endif /* FWPrefixHeader_pch */

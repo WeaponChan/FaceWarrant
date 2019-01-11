@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FWFaceAlertVC">
+            <connections>
+                <outlet property="faceName" destination="hEO-H7-GGq" id="puZ-zc-f6b"/>
+                <outlet property="facehomeBtn" destination="z2G-n8-BcY" id="gOG-WS-FWE"/>
+                <outlet property="headImg" destination="uCN-U4-D4W" id="gM8-tD-p5a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXG-tR-0ew">
+                    <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCN-U4-D4W">
+                            <rect key="frame" x="142.5" y="25" width="90" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="SC0-1b-Hnb"/>
+                                <constraint firstAttribute="width" secondItem="uCN-U4-D4W" secondAttribute="height" multiplier="1:1" id="cy7-M8-isX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啦啦啦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-H7-GGq">
+                            <rect key="frame" x="166" y="125" width="43" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="og0-T7-1go"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2G-n8-BcY">
+                            <rect key="frame" x="0.0" y="160" width="375" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="yF0-zn-poO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="个人主页">
+                                <color key="titleColor" red="0.90196078430000004" green="0.098039215690000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pageHomeClick:" destination="-1" eventType="touchUpInside" id="jgT-3k-NS9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrH-Fd-uPL">
+                            <rect key="frame" x="0.0" y="210" width="375" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="SPF-Ir-s1x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="向TA提问">
+                                <color key="titleColor" red="0.90196078430000004" green="0.098039215690000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="questionClick:" destination="-1" eventType="touchUpInside" id="cww-29-qq9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MrH-Fd-uPL" firstAttribute="leading" secondItem="OXG-tR-0ew" secondAttribute="leading" id="7FV-UV-mYc"/>
+                        <constraint firstAttribute="bottom" secondItem="MrH-Fd-uPL" secondAttribute="bottom" id="V6F-xY-LPZ"/>
+                        <constraint firstItem="uCN-U4-D4W" firstAttribute="top" secondItem="OXG-tR-0ew" secondAttribute="top" constant="25" id="VO2-nP-qPK"/>
+                        <constraint firstItem="uCN-U4-D4W" firstAttribute="centerX" secondItem="OXG-tR-0ew" secondAttribute="centerX" id="Xvo-FZ-PJS"/>
+                        <constraint firstItem="z2G-n8-BcY" firstAttribute="bottom" secondItem="MrH-Fd-uPL" secondAttribute="top" id="fMP-hH-CQM"/>
+                        <constraint firstItem="hEO-H7-GGq" firstAttribute="top" secondItem="uCN-U4-D4W" secondAttribute="bottom" constant="10" id="gjP-rd-NDF"/>
+                        <constraint firstItem="z2G-n8-BcY" firstAttribute="leading" secondItem="OXG-tR-0ew" secondAttribute="leading" id="jd8-4d-YeK"/>
+                        <constraint firstAttribute="height" constant="260" id="n7u-Ad-WAC"/>
+                        <constraint firstAttribute="trailing" secondItem="z2G-n8-BcY" secondAttribute="trailing" id="p9U-9F-tDB"/>
+                        <constraint firstAttribute="trailing" secondItem="MrH-Fd-uPL" secondAttribute="trailing" id="vIx-lw-CgR"/>
+                        <constraint firstItem="hEO-H7-GGq" firstAttribute="centerX" secondItem="uCN-U4-D4W" secondAttribute="centerX" id="xFz-UM-Fdi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OXG-tR-0ew" secondAttribute="bottom" id="QkY-h2-fVb"/>
+                <constraint firstItem="OXG-tR-0ew" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZJ2-eZ-QDT"/>
+                <constraint firstAttribute="trailing" secondItem="OXG-tR-0ew" secondAttribute="trailing" id="lpE-sP-n3f"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="90"/>
+        </view>
+    </objects>
+</document>

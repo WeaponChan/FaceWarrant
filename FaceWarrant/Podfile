@@ -1,0 +1,41 @@
+platform :ios,'8.0'
+target "FaceWarrant” do
+
+#source 'https://gitee.com/LhkhComponentLibrary/LhkhCocoaPods.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+#pod 'LhkhNavigationController'
+#pod 'LhkhComponent'
+
+pod 'AFNetworking' #网路框架
+
+pod 'MBProgressHUD' #菊花
+
+pod 'SDWebImage' #加载图片
+
+pod 'SDCycleScrollView' #轮播
+
+pod 'MJRefresh' #数据加载刷新
+pod 'MJExtension' #数据模型
+
+pod 'Masonry' #UI布局
+
+pod 'IQKeyboardManager' #监听键盘
+
+pod 'BaiduMapKit' #百度地图
+
+pod 'AliyunOSSiOS' #OSS上传
+pod 'VODUpload' #短视频上传
+pod 'AliyunPlayer_iOS/AliyunVodPlayerSDK' #短视频播放器
+
+pod 'AliyunVideoSDKBasic' #短视频SDK
+pod 'QuCore-ThirdParty' #短视频SDK
+
+pod 'WechatOpenSDK' #第三方登录微信
+pod 'WeiboSDK' #第三方登录微博
+
+pod 'JPush' #极光推送
+pod 'YYText'
+
+pod 'Bugly' #集成crash
+end
+

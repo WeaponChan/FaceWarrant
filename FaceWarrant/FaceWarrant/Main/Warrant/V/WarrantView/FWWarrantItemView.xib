@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FWWarrantItemView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ok-Ex-aP9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-wG-dq3">
+                            <rect key="frame" x="35" y="25" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="CZW-wG-dq3" secondAttribute="height" multiplier="1:1" id="Cvq-G8-wqM"/>
+                                <constraint firstAttribute="height" constant="75" id="reG-3S-SCw"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="warrant_photo"/>
+                            <connections>
+                                <action selector="itemClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2sX-mz-IGy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFs-kq-heP">
+                            <rect key="frame" x="150" y="25" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="d38-Cv-xP8"/>
+                                <constraint firstAttribute="width" secondItem="TFs-kq-heP" secondAttribute="height" multiplier="1:1" id="i0h-0q-dva"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="warrant_camera"/>
+                            <connections>
+                                <action selector="itemClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2x3-4z-mXP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwT-DV-PrG">
+                            <rect key="frame" x="265" y="25" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="OoK-4Y-xAb"/>
+                                <constraint firstAttribute="width" secondItem="KwT-DV-PrG" secondAttribute="height" multiplier="1:1" id="qEo-Ki-d9t"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="warrant_video"/>
+                            <connections>
+                                <action selector="itemClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="yFd-MC-5BV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-ej-HxG">
+                            <rect key="frame" x="175" y="155" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Kvd-ej-HxG" secondAttribute="height" multiplier="1:1" id="p98-YV-QTR"/>
+                                <constraint firstAttribute="width" constant="25" id="pYK-nK-VnE"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="warrant_close"/>
+                            <connections>
+                                <action selector="itemClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pd8-Mu-hvX"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCz-yS-fz0">
+                            <rect key="frame" x="52.5" y="105" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="hCk-FF-7nl"/>
+                                <constraint firstAttribute="width" constant="40" id="v0A-uv-TMx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAt-f5-6Fd">
+                            <rect key="frame" x="167.5" y="105" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="D4A-QQ-ROM"/>
+                                <constraint firstAttribute="width" constant="40" id="lYe-cE-PfD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-dn-BGO">
+                            <rect key="frame" x="272.5" y="105" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="UxC-eH-Tc8"/>
+                                <constraint firstAttribute="width" constant="60" id="lW6-Zr-mDP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oCz-yS-fz0" firstAttribute="centerX" secondItem="CZW-wG-dq3" secondAttribute="centerX" id="5hy-bF-J8c"/>
+                        <constraint firstItem="1cp-dn-BGO" firstAttribute="top" secondItem="KwT-DV-PrG" secondAttribute="bottom" constant="5" id="8Ty-77-o50"/>
+                        <constraint firstItem="UAt-f5-6Fd" firstAttribute="centerX" secondItem="TFs-kq-heP" secondAttribute="centerX" id="APm-Q2-flL"/>
+                        <constraint firstItem="CZW-wG-dq3" firstAttribute="width" secondItem="CZW-wG-dq3" secondAttribute="height" multiplier="1:1" id="MvG-Eb-1yN"/>
+                        <constraint firstItem="CZW-wG-dq3" firstAttribute="trailing" secondItem="TFs-kq-heP" secondAttribute="leading" constant="-40" id="SbZ-3s-82z"/>
+                        <constraint firstAttribute="bottom" secondItem="Kvd-ej-HxG" secondAttribute="bottom" constant="30" id="Tsl-Z3-sI9"/>
+                        <constraint firstItem="TFs-kq-heP" firstAttribute="centerX" secondItem="1Ok-Ex-aP9" secondAttribute="centerX" id="Vbc-Rk-LTx"/>
+                        <constraint firstItem="CZW-wG-dq3" firstAttribute="top" secondItem="TFs-kq-heP" secondAttribute="top" id="XuH-MJ-bIb"/>
+                        <constraint firstItem="KwT-DV-PrG" firstAttribute="width" secondItem="KwT-DV-PrG" secondAttribute="height" multiplier="1:1" id="cj6-Y0-d9d"/>
+                        <constraint firstItem="UAt-f5-6Fd" firstAttribute="top" secondItem="TFs-kq-heP" secondAttribute="bottom" constant="5" id="fmZ-EP-LPC"/>
+                        <constraint firstItem="1cp-dn-BGO" firstAttribute="centerX" secondItem="KwT-DV-PrG" secondAttribute="centerX" id="frG-JZ-vaw"/>
+                        <constraint firstItem="KwT-DV-PrG" firstAttribute="leading" secondItem="TFs-kq-heP" secondAttribute="trailing" constant="40" id="jJM-wa-TwP"/>
+                        <constraint firstItem="TFs-kq-heP" firstAttribute="top" secondItem="1Ok-Ex-aP9" secondAttribute="top" constant="25" id="q8Y-V2-NpT"/>
+                        <constraint firstItem="KwT-DV-PrG" firstAttribute="top" secondItem="TFs-kq-heP" secondAttribute="top" id="ra8-NV-Q8Q"/>
+                        <constraint firstItem="oCz-yS-fz0" firstAttribute="top" secondItem="CZW-wG-dq3" secondAttribute="bottom" constant="5" id="ycn-hT-Evz"/>
+                        <constraint firstItem="Kvd-ej-HxG" firstAttribute="centerX" secondItem="1Ok-Ex-aP9" secondAttribute="centerX" id="zH3-oK-ySe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Ok-Ex-aP9" secondAttribute="trailing" id="R6a-Cp-1GI"/>
+                <constraint firstAttribute="bottom" secondItem="1Ok-Ex-aP9" secondAttribute="bottom" id="llH-yq-8wj"/>
+                <constraint firstItem="1Ok-Ex-aP9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zx8-zg-oAR"/>
+                <constraint firstItem="1Ok-Ex-aP9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zz5-wf-rLT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-97" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="warrant_camera" width="74" height="74"/>
+        <image name="warrant_close" width="23" height="23"/>
+        <image name="warrant_photo" width="74" height="74"/>
+        <image name="warrant_video" width="74" height="74"/>
+    </resources>
+</document>

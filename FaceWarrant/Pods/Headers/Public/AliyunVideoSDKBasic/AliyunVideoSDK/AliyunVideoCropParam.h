@@ -1,0 +1,1 @@
+../../../../AliyunVideoSDKBasic/frameworks/AliyunVideoSDK.framework/Headers/AliyunVideoCropParam.h
